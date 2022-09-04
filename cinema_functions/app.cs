@@ -10,7 +10,7 @@ namespace CinemaApp
             decimal ticket_price = 14.50M;
             decimal result = -1;
 
-            if (pr_person.ToLower() != "adult" || pr_day.ToLower() == "tuesday" || pr_quantity < 1 || pr_time >= 5)
+            if (pr_person.ToLower() != "adult" || pr_day.ToLower() == "tuesday" || pr_quantity < 1 || pr_time >= 17)
             {
                 return result;
             }
@@ -27,7 +27,7 @@ namespace CinemaApp
             decimal ticket_price = 17.50M;
             decimal result = -1;
 
-            if (pr_person.ToLower() != "adult" || pr_day.ToLower() == "tuesday" || pr_quantity < 1 || pr_time < 5)
+            if (pr_person.ToLower() != "adult" || pr_day.ToLower() == "tuesday" || pr_quantity < 1 || pr_time < 17)
             {
                 return result;
             }

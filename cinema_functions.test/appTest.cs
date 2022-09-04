@@ -10,11 +10,11 @@ namespace CinemaFunctions.Test
         //Adult_Before_5(int quantity, string person, string day, decimal time, decimal expectedAmount)
 
         //Test Cases
-        [TestCase(1, "adult", "Monday", 4, 14.50)]
-        [TestCase(2, "adult", "Wednesday", 4, 29.00)]
-        [TestCase(0, "adult", "Thursday", 4, -1)]
-        [TestCase(4, "adult", "Monday", 6, -1)]
-        [TestCase(4, "adult", "Monday", 4, 58.00)]
+        [TestCase(1, "adult", "Monday", 16, 14.50)]
+        [TestCase(2, "adult", "Wednesday", 16, 29.00)]
+        [TestCase(0, "adult", "Thursday", 15, -1)]
+        [TestCase(4, "adult", "Monday", 18, -1)]
+        [TestCase(4, "adult", "Monday", 12, 58.00)]
 
 
         public void Adult_Before_5(int pr_quantity, string pr_person, string pr_day, decimal pr_time, decimal expectedAmount)
@@ -36,11 +36,11 @@ namespace CinemaFunctions.Test
         //Adult After 5 (int quantity, string person, string day, decimal time, decimal expectedAmount )
 
         //Test Cases
-        [TestCase(1, "adult", "Sunday", 5, 17.50)]
-        [TestCase(3, "adult", "Saturday", 7, 52.50)]
-        [TestCase(1, "adult", "Monday", 6, 17.50)]
-        [TestCase(1, "adult", "Tuesday", 5, -1)]
-        [TestCase(2, "student", "Friday", 7, -1)]
+        [TestCase(1, "adult", "Sunday", 17, 17.50)]
+        [TestCase(3, "adult", "Saturday", 19, 52.50)]
+        [TestCase(1, "adult", "Monday", 18, 17.50)]
+        [TestCase(1, "adult", "Tuesday", 17, -1)]
+        [TestCase(2, "student", "Friday", 19, -1)]
 
         public void Adult_After_5(int pr_quantity, string pr_person, string pr_day, decimal pr_time, decimal expectedAmount)
         {
@@ -170,7 +170,7 @@ namespace CinemaFunctions.Test
     }
 
     [TestFixture]
-    public class TestClass8
+    public class TestCase8
     {
         //Chick Flick Thursday(int quantity, string person, string day, decimal expectedAmount)
 
@@ -193,7 +193,7 @@ namespace CinemaFunctions.Test
     }
 
     [TestFixture]
-    public class TestClass9
+    public class TestCase9
     {
         // Kids Careers(int quantity, string day, bool holiday, decimal expectedAmount)
 
@@ -202,7 +202,7 @@ namespace CinemaFunctions.Test
         [TestCase(3, "Wednesday", false, 36.00)]
         [TestCase(5, "Wednesday", false, 60.00)]
         [TestCase(21, "Wednesday", false, 252.00)]
-        [TestCase(6, "Wednesday", false, 72.00)]
+        [TestCase(6, "Wednesday", true, -1)]
 
         public void Kids_Careers(int pr_quantity, string pr_day, bool pr_holiday, decimal expectedAmount)
         {
