@@ -130,8 +130,8 @@ namespace CinemaFunctions.Test
 
         //Test Cases
         [TestCase(1, "student", 14.00)]
-        [TestCase(50, "student", 700.00)]
-        [TestCase(23, "student", 322.00)]
+        [TestCase(3, "student", 42.00)]
+        [TestCase(5, "student", 70.00)]
         [TestCase(1, "adult", -1)]
         [TestCase(2, "student", 28.00)]
 
