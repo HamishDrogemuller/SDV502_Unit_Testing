@@ -179,7 +179,7 @@ namespace CinemaFunctions.Test
         [TestCase(3, "adult", "Thursday", 64.50)]
         [TestCase(8, "adult", "Thursday", 172.00)]
         [TestCase(32, "adult", "Thursday", 688.00)]
-        [TestCase(2, "adult", "Thursday", 43.00)]
+        [TestCase(2, "adult", "Friday", -1)]
 
         public void Chick_Flick_Thursday(int pr_quantity, string pr_person, string pr_day, decimal expectedAmount)
         {
