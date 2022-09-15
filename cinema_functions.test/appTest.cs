@@ -16,7 +16,7 @@ namespace CinemaFunctions.Test
         [TestCase(4, "adult", "Monday", 18, -1)]
         [TestCase(4, "adult", "Monday", 12, 58.00)]
 
-
+        //Adult before 5 test case with Arrange, Act and Assert
         public void Adult_Before_5(int pr_quantity, string pr_person, string pr_day, decimal pr_time, decimal expectedAmount)
         {
             //Arrange
@@ -42,6 +42,7 @@ namespace CinemaFunctions.Test
         [TestCase(1, "adult", "Tuesday", 17, -1)]
         [TestCase(2, "student", "Friday", 19, -1)]
 
+        //Adult after 5 test case with Arrange, Act and Assert
         public void Adult_After_5(int pr_quantity, string pr_person, string pr_day, decimal pr_time, decimal expectedAmount)
         {
             //Arrange
@@ -65,7 +66,7 @@ namespace CinemaFunctions.Test
         [TestCase(5, "adult", "Tuesday", 65.00)]
         [TestCase(4, "adult", "Monday", -1)]
 
-
+        //Adult on Tuesday test case with Arrange, Act and Assert
         public void Adult_Tuesday(int pr_quantity, string pr_person, string pr_day, decimal expectedAmount)
         {
             //Arrange
@@ -89,6 +90,7 @@ namespace CinemaFunctions.Test
         [TestCase(20, "child", 240.00)]
         [TestCase(16, "child", 192.00)]
 
+        //Child under 16 test case with Arrange, Act and Assert
         public void Child_Under_16(int pr_quantity, string pr_person, decimal expectedAmount)
         {
             //Arrange
@@ -112,6 +114,7 @@ namespace CinemaFunctions.Test
         [TestCase(5, "Senior", 62.50)]
         [TestCase(2, "Senior", 25.00)]
 
+        //Senior test case with Arrange, Act and Assert
         public void Senior(int pr_quantity, string pr_person, decimal expectedAmount)
         {
             //Arrange
@@ -135,6 +138,7 @@ namespace CinemaFunctions.Test
         [TestCase(1, "adult", -1)]
         [TestCase(2, "student", 28.00)]
 
+        //Student test case with Arrange, Act and Asserts
         public void Student(int pr_quantity, string pr_person, decimal expectedAmount)
         {
             //Arrange
@@ -158,6 +162,7 @@ namespace CinemaFunctions.Test
         [TestCase(1, 1, 2, -1)]
         [TestCase(1, 4, 0, -1)]
 
+        //Family pass test case with Arrange, Act and Assert
         public void Family_Pass(int pr_quantity_ticket, int pr_quantity_adult, int pr_quantity_child, decimal expectedAmount)
         {
             //Arrange
@@ -181,6 +186,7 @@ namespace CinemaFunctions.Test
         [TestCase(32, "adult", "Thursday", 688.00)]
         [TestCase(2, "adult", "Friday", -1)]
 
+        //Chick flick Thursday test case with Arrange, Act and Assert
         public void Chick_Flick_Thursday(int pr_quantity, string pr_person, string pr_day, decimal expectedAmount)
         {
             //Arrange
@@ -204,6 +210,7 @@ namespace CinemaFunctions.Test
         [TestCase(21, "Wednesday", false, 252.00)]
         [TestCase(6, "Wednesday", true, -1)]
 
+        //Kids Careers test case with Arrange, Act and Assert.
         public void Kids_Careers(int pr_quantity, string pr_day, bool pr_holiday, decimal expectedAmount)
         {
             //Arrange
